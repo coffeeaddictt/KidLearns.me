@@ -1,0 +1,745 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KidLearns | Learning made easy</title>
+    <!-- favicon -->
+    <link rel="icon" href="static/img/logo-black.png" sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href={% static "css/animate.css" %}>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %}>
+    <!-- magnific popup -->
+    <link rel="stylesheet" href={% static "css/magnific-popup.css" %}>
+    <!-- Nice Select -->
+    <link rel="stylesheet" href={% static "css/nice-select.css" %}>
+    <!-- Odomiters css -->
+    <link rel="stylesheet" href={% static "css/odometer.css" %}>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href={% static "css/font-awesome.min.css" %}>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href={% static "css/slick.css" %}>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href={% static "/css/responsive.css" %}>
+</head>
+
+
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!--  search Popup start -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button class="close-btn border-none"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <!-- Search Popup End -->
+
+    <main class="page-wrapper">
+       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Nav Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="nav-area-wrapper-relative">
+            <nav class="navbar navbar-area navbar-expand-lg navigation-style-02">
+                <div class="container custom-container custom-container-01">
+                    <div class="responsive-menu">
+                        <div class="logo-wrapper">
+                            <a href="index.html" class="logo">
+                                <img src="static/img/Logos/this.png" alt="">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler navbar-bs-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#kid_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="kid_main_menu">
+                        <ul class="navbar-nav">
+                            <li><a href="#0">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="courses">Courses</a></li>
+                            <li><a href="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right-content">
+                        <div class="icon-part">
+                            <ul>
+                                <li id="search"><a href="#"><img src="static/img/icon/search-icon.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="login" class="btn-common nav-btn">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Nav Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Banner Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="banner-area home-01">
+            <div class="container custom-container-01">
+                <div class="banner-wrapper">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-10">
+                            <div class="banner-inner">
+                                <p class="subtitle">KidLearns | Learning made easy</p>
+                                <h1 class="title">Your child learning made <span>easy</span> with us!</h1>
+                                <p> Fun digital education
+                                    for all children worldwide <br> Whenever, Wherever.</p>
+                                <div class="header-btn">
+                                    <div class="btn-wrap">
+                                        <a href="login" class="btn-common flat-btn btn-active">apply online</a>
+                                    </div>
+                                    <div class="btn-wrap margin-left-20">
+                                        <a href="contact" class="btn-common fill-btn">Discover</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/shapes/Ellipse-01.png' %}" class="element-01" alt="Ellipse" />
+                                <img src="{% static 'img/shapes/Ellipse-02.png' %}" class="element-02" alt="Ellipse" />
+                                <img src="{% static 'img/shapes/Vector-15.png' %}" class="element-03" alt="vector" />
+                                <img src="{% static 'img/header/plane.png' %}"class="element-04" alt="plane" />
+                                <img src="{% static 'img/icon/location.png' %}" class="element-05" alt="location" />
+                                <img src="{% static 'img/header/bg.png' %}" class="banner-img" alt="Student" />
+                            </div>"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Banner Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Features Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="features-section margin-top-100">
+            <img src="static/img/shapes/graduation.png" class="shape" alt="graduation cap">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="static/img/icon/idea.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Accessible Education</h4>
+                                <p>An eLearning platform for children provides access to education for children regardless of their background or social status. </p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="static/img/icon/coversation.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Interactive and Engaging</h4>
+                                <p>eLearning platforms for children often incorporate interactive and engaging features such as multimedia content.</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="static/img/icon/emergency.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Personalized Experience</h4>
+                                <p>An eLearning platform can provide personalized learning experiences tailored to each child's needs and learning pace.</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Feedback Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            New Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="feedback-section margin-top-110">
+            <div class="container custom-container-01">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="theme-section-title desktop-center text-center">
+                            <span class="subtitle">COURSES</span>
+                            <h4 class="title">a snippets <br>  of some courses
+                                <svg class="title-shape" width="355" height="15" viewBox="0 0 355 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path"
+                                        d="M351.66 12.6362C187.865 -6.32755 49.6478 6.37132 3.41142 12.6362"
+                                        stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M351.66 13C187.865 -5.96378 49.6478 6.73509 3.41142 13"
+                                        stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M2.5 5.5C168.5 2.0001 280.5 -1.49994 352.5 8.49985"
+                                        stroke="#FFC44E" stroke-width="3" stroke-linecap="square" />
+                                </svg>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-box-item">
+                            <div class="thumbnail">
+                                <img src="static/img/sections/students/stargazing.png" alt="">
+                                <a class="video-play-btn mfp-iframe" href="https://www.youtube.com/watch?v=t99ULJjCsaM">
+                                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.124 12.6362L0.364909 24.7606L0.36491 0.511875L13.124 12.6362Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="content">
+                                    <h6 class="title">The Animal Sounds Song</h6>
+                                    <p>Kids TV</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-box-item">
+                            <div class="thumbnail">
+                                <img src="static/img/sections/students/stargazing.png" alt="">
+                                <a class="video-play-btn mfp-iframe" href="https://www.youtube.com/watch?v=yCjJyiqpAuU">
+                                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.124 12.6362L0.364909 24.7606L0.36491 0.511875L13.124 12.6362Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="content">
+                                    <h6 class="title">Twinkle Twinkle</h6>
+                                    <p>Super Simple Songs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-box-item">
+                            <div class="thumbnail">
+                                <img src="static/img/sections/students/stargazing.png" alt="">
+                                <a class="video-play-btn mfp-iframe" href="https://www.youtube.com/watch?v=frN3nvhIHUk">
+                                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.124 12.6362L0.364909 24.7606L0.36491 0.511875L13.124 12.6362Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="content">
+                                    <h6 class="title">Do You Like Broccoli?</h6>
+                                    <p>Super Simple Songs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="image-box-item">
+                            <div class="thumbnail">
+                                <img src="static/img/sections/students/stargazing.png" alt="">
+                                <a class="video-play-btn mfp-iframe" href="https://www.youtube.com/watch?v=l4WNrvVjiTw">
+                                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.124 12.6362L0.364909 24.7606L0.36491 0.511875L13.124 12.6362Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="content">
+                                    <h6 class="title">If You're Happy</h6>
+                                    <p>Super Simple Songs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Features Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            About Section Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="about-section-area section-top-space about-home-02">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="theme-section-title">
+                            <span class="subtitle">ABOUT US & EXPERIENCE</span>
+                            <h4 class="title">Allow your kids to have the best education there is
+                                <svg class="title-shape style-01" width="355" height="15" viewBox="0 0 355 15"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path"
+                                        d="M351.66 12.6362C187.865 -6.32755 49.6478 6.37132 3.41142 12.6362"
+                                        stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M351.66 13C187.865 -5.96378 49.6478 6.73509 3.41142 13"
+                                        stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M2.5 5.5C168.5 2.0001 280.5 -1.49994 352.5 8.49985"
+                                        stroke="#FFC44E" stroke-width="3" stroke-linecap="square" />
+                                </svg>
+                            </h4>
+                        </div>
+                        <div class="about-content-wrap">
+                            <p>At KidLearns, we believe in the power of education and the limitless potential of every individual. Our mission is to provide a comprehensive and interactive online learning experience that empowers learners to achieve their goals, enhance their knowledge, and excel in their chosen fields.</p>
+                            <p>KidLearns is a leading eLearning platform that offers a diverse range of courses covering various subjects, from academic disciplines to professional skills and personal development. </p>
+                            <span class="core">Core strength</span>
+                        </div>
+                        <div class="counter-section-inner style-a">
+                            <div class="single-counterup color-01">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title" data-odometer-final="15">0</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">Years Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-counterup color-02">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title style-01" data-odometer-final="875">0</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">Students Approved</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-counterup color-03">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title style-02" data-odometer-final="96">0</h3>
+                                        <h3 class="title">%</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">Admission success</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="static/img/sections/about/crossing.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            About Section Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Category Section Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="category-section-area">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrapper d-flex justify-content-between">
+                            <div class="theme-section-title">
+                                <span class="subtitle">CATEGORIES</span>
+                                <h4 class="title">Popular Discipline & Collage</h4>
+                            </div>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" data-bs-toggle="pill"
+                                        data-bs-target="#discipline">Discipline</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-bs-toggle="pill"
+                                        data-bs-target="#collage">Collage</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="discipline">
+                        <div class="destination-items-wrap">
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/foresty.png" alt="">
+                                </div>
+                                <h6 class="name">Agriculture & <br> Foresty</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/science.png" alt="">
+                                </div>
+                                <h6 class="name">science <br> & professional</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/art.png" alt="">
+                                </div>
+                                <h6 class="name">Art, Design & <br> Culture</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/business.png" alt="">
+                                </div>
+                                <h6 class="name">Business & <br> Management</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/pc.png" alt="">
+                                </div>
+                                <h6 class="name">Computer <br> Science & IT</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/book.png" alt="">
+                                </div>
+                                <h6 class="name">Education & <br> Training</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/click.png" alt="">
+                                </div>
+                                <h6 class="name">Engeneering & <br> Technology</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/french-fry.png" alt="">
+                                </div>
+                                <h6 class="name">Hopitality & <br> Sports</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/news-paper.png" alt="">
+                                </div>
+                                <h6 class="name">Journalism & <br> Media</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/first-aid-kit.png" alt="">
+                                </div>
+                                <h6 class="name">Medicine & <br> Health</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/law.png" alt="">
+                                </div>
+                                <h6 class="name">Law</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/enverment.png" alt="">
+                                </div>
+                                <h6 class="name">Social Science</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/humanity.png" alt="">
+                                </div>
+                                <h6 class="name">Humanities</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/recicle.png" alt="">
+                                </div>
+                                <h6 class="name">Enviromental <br> Studies</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="collage">
+                        <div class="destination-items-wrap">
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/french-fry.png" alt="">
+                                </div>
+                                <h6 class="name">Hopitality & <br> Sports</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/news-paper.png" alt="">
+                                </div>
+                                <h6 class="name">Journalism & <br> Media</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/first-aid-kit.png" alt="">
+                                </div>
+                                <h6 class="name">Medicine & <br> Health</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/law.png" alt="">
+                                </div>
+                                <h6 class="name">Law</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/enverment.png" alt="">
+                                </div>
+                                <h6 class="name">Social Science</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/humanity.png" alt="">
+                                </div>
+                                <h6 class="name">Humanities</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/recicle.png" alt="">
+                                </div>
+                                <h6 class="name">Enviromental <br> Studies</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/foresty.png" alt="">
+                                </div>
+                                <h6 class="name">Agriculture & <br> Foresty</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/science.png" alt="">
+                                </div>
+                                <h6 class="name">science <br> & professional</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/art.png" alt="">
+                                </div>
+                                <h6 class="name">Art, Design & <br> Culture</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/business.png" alt="">
+                                </div>
+                                <h6 class="name">Business & <br> Management</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/pc.png" alt="">
+                                </div>
+                                <h6 class="name">Computer <br> Science & IT</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/book.png" alt="">
+                                </div>
+                                <h6 class="name">Education & <br> Training</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="static/img/sections/desipline/click.png" alt="">
+                                </div>
+                                <h6 class="name">Engeneering & <br> Technology</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Category Section Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Steps Section Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="destination-section style-01 margin-top-110 instruction">
+            <div class="container custom-container-01">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="theme-section-title desktop-center text-center">
+                            <span class="subtitle">STEPS</span>
+                            <h4 class="title">Our Process</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-items-wrap">
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="static/img/icon/step-01.png" alt="">
+                        </div>
+                        <h6 class="name">Curriculum <br> development</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="static/img/icon/step-02.png" alt="">
+                        </div>
+                        <h6 class="name">Content creation <br> & research</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="static/img/icon/step-03.png" alt="">
+                        </div>
+                        <h6 class="name">User-friendly <br> interface </h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="static/img/icon/step-04.png" alt="">
+                        </div>
+                        <h6 class="name">Interactive <br> activities</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="static/img/icon/step-05.png" alt="">
+                        </div>
+                        <h6 class="name">Assessments <br> & feedback</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Steps Section Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            News Section Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="news-section-area margin-top-110">
+            <div class="container custom-container-01">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="theme-section-title desktop-center text-center">
+                            <span class="subtitle">KIDLEARNS UPDATES</span>
+                            <h4 class="title">Kidlearns Latest Blog</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="static/img/h-blog/stars.png" alt="" class="border-radius-20">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="static/img/icon/calander.png" alt="">15th May 2023 </li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="static/img/h-blog/stars.png" alt="">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="static/img/icon/calander.png" alt="">16th May 2023</li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="static/img/h-blog/stars.png" alt="">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="static/img/icon/calander.png" alt="">17th May 2023</li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            News Section Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+       
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- Jquery Js -->
+    <script src={% static 'js/jquery-3.6.0.min.js'%}></script>
+    <!-- bootstrap -->
+    <script src={% static 'js/bootstrap.min.js"'%}></script>
+    <!-- magnific popup -->
+    <script src={% static 'js/jquery.magnific-popup.js'%}></script>
+    <!-- wow -->
+    <script src={% static 'js/wow.min.js'%}></script>
+    <!-- Nice Select -->
+    <script src={% static 'js/jquery.nice-select.js'%}></script>
+    <!-- countdown -->
+    <script src={% static 'js/jquery.countdown.min.js'%}></script>
+    <!-- Odomiters -->
+    <script src={% static 'js/odometer.min.js'%}></script>
+    <!-- Viewport Js -->
+    <script src={% static 'js/viewport.jquery.js'%}></script>
+    <!-- slick Js -->
+    <script src={% static 'js/slick.min.js'%}></script>
+    <!-- main js -->
+    <script src={% static 'js/main.js'%}></script>
+</body>
+{% endblock %}
+</html>

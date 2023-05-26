@@ -1,0 +1,269 @@
+{% extends 'accounts/main.html' %}
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KidLearns | Learning made easy</title>
+    <!-- favicon -->
+    <link rel="icon" href="static/img/favicon.png" sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href={% static 'css/animate.css' %}>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+    <!-- magnific popup -->
+    <link rel="stylesheet" href={% static 'css/magnific-popup.css' %}>
+    <!-- Nice Select -->
+    <link rel="stylesheet" href={% static 'css/nice-select.css' %}>
+    <!-- Odomiters css -->
+    <link rel="stylesheet" href={% static 'css/odometer.css' %}>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href={% static 'css/font-awesome.min.css' %}>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href={% static 'css/slick.css' %}>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href={% static 'css/style.css' %}>
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href={% static '/css/responsive.css' %}>
+</head>
+
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!--  search Popup start -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button class="close-btn border-none"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    <!-- Search Popup End -->
+
+    <main class="page-wrapper">
+       <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Nav Area Start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="nav-area-wrapper-relative">
+            <nav class="navbar navbar-area navbar-expand-lg navigation-style-02">
+                <div class="container custom-container custom-container-01">
+                    <div class="responsive-menu">
+                        <div class="logo-wrapper">
+                            <a href="index.html" class="logo">
+                                <img src="static/img/Logos/logo-black.png" alt="">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler navbar-bs-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#kid_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="kid_main_menu">
+                        <ul class="navbar-nav">
+                            <li><a href="#0">Home</a></li>
+                            <li><a href="about">About</a></li>
+                            <li><a href="courses">Courses</a></li>
+                            <li><a href="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right-content">
+                        <div class="icon-part">
+                            <ul>
+                                <li id="search"><a href="#"><img src="static/img/icon/search-icon.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-common nav-btn">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Nav Area End Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <!-- about page start here  -->
+        <div class="about-page-area-wrapper single-page-section-top-space single-page-section-bottom-space">
+            <!-- about area start here  -->
+            <section class="about-section-area section-bottom-space">
+                <div class="container custom-container-01">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="about-content">
+                                <h3 class="content-title">About us</h3>
+
+                                <p class="paragraph">Our vision is to be the source
+                                    for childhood learning on the internet
+                                    available from anywhere</p>
+                                <p class="paragraph">fun digital education
+                                    for all children worldwide!
+                                </p>
+
+                                <div class="icon-box-with-text-wrap">
+                                    <ul class="ul icon-box-with-text style-01">
+                                        <li class="single-icon-box-with-text">
+                                            <div class="icon-wrap color-01">
+                                                <img src="static/img/icon/icon-and-text/key.svg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <p class="text">Get life-time free access with one time payment in our
+                                                    courses plan. Easy
+                                                    &
+                                                    simple!
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="single-icon-box-with-text style-02">
+                                            <div class="icon-wrap color-02">
+                                                <img src="static/img/icon/icon-and-text/board.svg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <p class="text">We find the expert tuotor with huge teaching experience
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="single-icon-box-with-text style-03">
+                                            <div class="icon-wrap color-03">
+                                                <img src="static/img/icon/icon-and-text/monitor.svg" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <p class="text">We present worldclass courses with practical learning
+                                                    tasks
+                                                    that make
+                                                    students more
+                                                    confident.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+            </section>
+            <!-- about area end here  -->
+
+            
+
+            <!-- chose us area start here  -->
+            <section class="chose-area-wrapper section-bottom-space">
+                <div class="chose-area-inner bg-color-01">
+                    <div class="bg-image background-image" style="background-image: url(static/img/chose-us/01.jpg);">
+                    </div>
+                    <div class="container custom-container-01">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-6">
+                                <div class="img-box">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content-wrap">
+                                    <div class="section-title-wrapper">
+                                        <h4 class="section-title">Why chose us</h4>
+                                        <p class="description color-02">87% of people learning for professional
+                                            development
+                                            report
+                                            career benefits</p>
+                                    </div>
+
+                                    <div class="icon-box-with-text-wrap">
+                                        <ul class="ul icon-box-with-text style-02">
+                                            <li class="single-icon-box-with-text">
+                                                <div class="icon-wrap">
+                                                    <img src="static/img/icon/icon-and-text/02/01.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title">Our Vision</h4>
+                                                    <p class="paragraph">Our vision is to be the leading student
+                                                        consultancy
+                                                        and recruiting agency of the world by satisfying our clients’ in
+                                                        all aspects.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="single-icon-box-with-text style-02">
+                                                <div class="icon-wrap">
+                                                    <img src="static/img/icon/icon-and-text/02/02.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title">Our Mission</h4>
+                                                    <p class="paragraph">Kidlearns mission is to achieve excellence in
+                                                        education
+                                                        through excellent services and new scopes for world-class
+                                                        education by realizing dreams of our children within their
+                                                        capacities.
+
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="single-icon-box-with-text style-03">
+                                                <div class="icon-wrap">
+                                                    <img src="static/img/icon/icon-and-text/02/03.png" alt="">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title">Our Goal</h4>
+                                                    <p class="paragraph">Create opportunities of higher education to children.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- chose us area end here  -->
+
+    
+        </div>
+        <!-- about page end here  -->
+    </main>
+
+    <!-- back to top area start -->
+    <!-- <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div> -->
+    <!-- back to top area end -->
+
+    <!-- Jquery Js -->
+    <script src={% static 'js/jquery-3.6.0.min.js'%}></script>
+    <!-- bootstrap -->
+    <script src={% static 'js/bootstrap.min.js"'%}></script>
+    <!-- magnific popup -->
+    <script src={% static 'js/jquery.magnific-popup.js'%}></script>
+    <!-- wow -->
+    <script src={% static 'js/wow.min.js'%}></script>
+    <!-- Nice Select -->
+    <script src={% static 'js/jquery.nice-select.js'%}></script>
+    <!-- countdown -->
+    <script src={% static 'js/jquery.countdown.min.js'%}></script>
+    <!-- Odomiters -->
+    <script src={% static 'js/odometer.min.js'%}></script>
+    <!-- Viewport Js -->
+    <script src={% static 'js/viewport.jquery.js'%}></script>
+    <!-- slick Js -->
+    <script src={% static 'js/slick.min.js'%}></script>
+    <!-- main js -->
+    <script src={% static 'js/main.js'%}></script>
+
+</body>
+{% endblock %}
+</html>
+
+
